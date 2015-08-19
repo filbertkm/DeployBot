@@ -1,0 +1,19 @@
+{
+  "name": "wikibot/deploybot",
+  "type": "library",
+  "description": "Deployment bot",
+  "repositories": [
+     {
+       "type": "git",
+       "url": "https://github.com/filbertkm/wikibot"
+     }
+  ],
+  "require": {
+  	"wikibot/wikibot": "dev-lib"
+  },
+  "autoload": {
+    "psr-4": {
+      "DeployBot\\": "src"
+    }
+  }
+}
