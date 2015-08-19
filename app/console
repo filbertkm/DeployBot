@@ -6,5 +6,12 @@ set_time_limit( 0 );
 
 require __DIR__ . '/../bootstrap.php';
 
-$bot = new Wikibot\Bot();
+$bot = new Wikibot\Bot(
+	__DIR__ . '/../config/config.yml',
+	__DIR__ . '/../log'
+);
+
+$command = new DeployBot\Command\BranchInfoCommand();
+$bot->registerCommand( $command );
+
 $bot->run();

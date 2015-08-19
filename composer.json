@@ -9,7 +9,7 @@
      }
   ],
   "require": {
-  	"wikibot/wikibot": "dev-lib"
+	"wikibot/wikibot": "dev-lib"
   },
   "autoload": {
     "psr-4": {
